@@ -1,0 +1,16 @@
+<!-- salvarcontatos.html -->
+<body ng-controller="salvarcontrollers as ctl">
+        <h1>Contatos</h1>
+        <form ng-submit="ctl.salvar()">
+          <fieldset>
+            <legend>Novo Contato</legend>
+            <label>Nome:</label>
+            <input ng-model="ctl.novo.nomepessoa" required/>
+            <br/>
+            <label>Telefone:</label>
+            <input ng-model="ctl.novo.telefonepessoa" required/>
+            <br/>
+            <input type="submit"/>
+          </fieldset>
+        </form>
+      </body>
